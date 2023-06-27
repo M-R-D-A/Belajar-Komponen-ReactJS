@@ -1,6 +1,42 @@
-import React from 'react'
+import React from 'react';
 import Chart from 'react-apexcharts';
+
 const ChartBar = () => {
+
+    var options = {
+        series: [
+            {
+                name: 'Kurang',
+                data: [44, 55, 57, 56, 61, 58, 63,],
+                color: '#FF6A81'
+            },
+            {
+                name: 'Sedang',
+                data: [76, 85, 101, 98, 87, 105, 91,],
+                color: '#6CE1AE'
+            },
+            {
+                name: 'Cukup Baik',
+                data: [35, 41, 36, 26, 45, 83, 52,],
+                color: '#48B8F1'
+            },
+            {
+                name: 'Baik',
+                data: [35, 41, 36, 26, 45, 48, 52,],
+                color: '#BC5EF6'
+            },
+            {
+                name: 'Memuaskan',
+                data: [35, 41, 36, 26, 55, 48, 52,],
+                color: '#FB934E'
+            },
+            {
+                name: 'Sangat Memuaskan',
+                data: [35, 41, 36, 26, 45, 78, 52,],
+                color: '#E9E059'
+            },
+        ],
+    };
     return (
         <React.Fragment>
             <div>ChartBar</div>
@@ -11,72 +47,92 @@ const ChartBar = () => {
                     type='bar'
                     width={1380}
                     height={700}
-
                     series={[
                         {
-                            name: "Social Media Subscriber",
-                            data: [6578, 6787, 3245, 2324, 5123, 2345]
-                        }
+                            name: 'Kurang',
+                            data: [44, 55, 57, 56, 61, 58, 63,],
+                            color: '#FF6A81'
+                        },
+                        {
+                            name: 'Sedang',
+                            data: [76, 85, 101, 98, 87, 105, 91,],
+                            color: '#6CE1AE'
+                        },
+                        {
+                            name: 'Cukup Baik',
+                            data: [35, 41, 36, 26, 45, 83, 52,],
+                            color: '#48B8F1'
+                        },
+                        {
+                            name: 'Baik',
+                            data: [35, 41, 36, 26, 45, 48, 52,],
+                            color: '#BC5EF6'
+                        },
+                        {
+                            name: 'Memuaskan',
+                            data: [35, 41, 36, 26, 55, 48, 52,],
+                            color: '#FB934E'
+                        },
+                        {
+                            name: 'Sangat Memuaskan',
+                            data: [35, 41, 36, 26, 45, 78, 52,],
+                            color: '#E9E059'
+                        },
                     ]}
-
-                    options={ {
-
-                        title:{ 
-                            text:"BarChar Developed by DevOps Team",
-                            style: {fontSize: 30},
+                    options={{
+                        title: {
+                            text: 'Statistik Cabang Jatim',
+                            style: { fontSize: 20 },
                         },
-                        colors:['#f90000'],
-                        theme:{mode: 'light'},
-                        style:{ fontSize: 30},
-
-                        subtitle: {
-                            text:"This is BarChart 6",
-                            style:{ fontSize: 20}
-                        },
-                        xaxis:{
-                            tickPlacement:'on',
-                            categories:['Facebook', 'twitter', 'Linkedin','instagram','github','stackedoverflow','Youtube'],
-                            title:{
-                                text:'Social media user',
-                                style:{color:"#f90000", fontSize:30}
+                        theme: { mode: 'dark' },
+                        xaxis: {
+                            categories: [
+                                'Keshan',
+                                'Senam',
+                                'Jurus',
+                                'Fisik',
+                                'Teknik',
+                                'Sambung',
+                                'Rata - rata',
+                            ],
+                            title: {
+                                text: 'UKT',
+                                style: { color: '#FFFFFF', fontSize: 30 },
                             },
                         },
-
-                        yaxis:{
-                            labels:{
-                                formatter:(val)=>{ return `$${val}`},
-                                style:{
+                        yaxis: {
+                            labels: {
+                                formatter: (val) => {
+                                    return `$${val}`;
+                                },
+                                style: {
                                     fontSize: '10',
-                                    colors:['#f90000']}
+                                    colors: ['#FFFFFF'],
+                                },
                             },
-                            title:{
-                                text:"User In K",
-                                style:{ color:"#f90000"}
-                            }
+                            title: {
+                                text: 'User In K',
+                                style: { color: '#FFFFFF' },
+                            },
                         },
-
-                        legend:{
-                            show:true,
-                            position: "left"
+                        legend: {
+                            show: true,
+                            position: 'left',
                         },
-                        dataLabels:{
-                            formatter:(val)=>{ return `$${val}`},
-                            style:{
-                                colors:['#f4f4f4'],
-                                fontSize: 20
-                            }
-                        }
-                        
+                        dataLabels: {
+                            formatter: (val) => {
+                                return `${val}%`;
+                            },
+                            style: {
+                                colors: ['#f4f4f4'],
+                                fontSize: 15,
+                            },
+                        },
                     }}
-                    
-
-                >
-
-                </Chart>
-
+                />
             </div>
         </React.Fragment>
-    )
-}
+    );
+};
 
-export default ChartBar
+export default ChartBar;
