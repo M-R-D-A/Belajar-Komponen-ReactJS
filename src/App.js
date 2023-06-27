@@ -8,6 +8,7 @@ import Edituser from "./Components/Edituser";
 import ExportCsv from "./Components/Exportcsv";
 import Enablebutton from "./Components/Enablebutton";
 import Addmoreinput from "./Components/Addmoreinput";
+import ChartBar from "./Components/ChartBar";
 
 
 
@@ -27,6 +28,7 @@ function App()
       <Route path='/exportcsv' element={<ExportCsv/>} /> 
       <Route path='/enablebutton' element={<Enablebutton/>} /> 
       <Route path='/addmoreinput' element={<Addmoreinput/>} /> 
+      <Route path='/chartbar' element={<ChartBar/>} /> 
     
      
           
