@@ -5,12 +5,15 @@ import { Link } from "react-router-dom";
 function Header()
 {
     let data = [
-        { to:'/',name: "Home", key:1},
-        { to:'/userdata',name: "User Data List", key:2},
-        { to:'/exportcsv',name: "Export CSV", key:3},
-        { to:'/enablebutton',name: "Enable Button", key:4},
-        { to:'/addmoreinput',name: "Add More Input", key:5},
-        { to:'/chartbar',name: "Chart Bar", key:6},
+        { to:'/',name: "Home"},
+        { to:'/userdata',name: "User Data List"},
+        { to:'/exportcsv',name: "Export CSV"},
+        { to:'/enablebutton',name: "Enable Button"},
+        { to:'/addmoreinput',name: "Add More Input"},
+        { to:'/chartbar',name: "Chart Bar"},
+        { to:'/notequill',name: "Note Quill"},
+        { to:'/notettprism',name: "Note Tiptap prism"},
+        { to:'/notett',name: "Note Tiptap"},
     ]
     return(
         <React.Fragment>

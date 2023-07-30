@@ -9,6 +9,9 @@ import ExportCsv from "./Components/Exportcsv";
 import Enablebutton from "./Components/Enablebutton";
 import Addmoreinput from "./Components/Addmoreinput";
 import ChartBar from "./Components/ChartBar";
+import NoteQuill from "./Components/NoteQuill";
+import NoteTiptapPrism from "./Components/NoteTiptapPrism";
+import TipTap from "./Components/NewTipTap";
 
 
 
@@ -29,6 +32,9 @@ function App()
       <Route path='/enablebutton' element={<Enablebutton/>} /> 
       <Route path='/addmoreinput' element={<Addmoreinput/>} /> 
       <Route path='/chartbar' element={<ChartBar/>} /> 
+      <Route path='/notequill' element={<NoteQuill/>} /> 
+      <Route path='/notettprism' element={<NoteTiptapPrism/>} /> 
+      <Route path='/notett' element={<TipTap/>} /> 
     
      
           
